@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="d">
+        <div class="a">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/2048px-Home-icon.svg.png">
+            </a>
+            MENTEE FORM
+        </div>
+        <div class="b">
+            <form>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="First Name" id="fname" maxlength="50" placeholder="Enter your First Name" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="Last Name" id="lname" maxlength="50" placeholder="Enter your Last Name" required>
+                </div>
+                <div>
+                    <label for="fafname">Father Name:</label>
+                    <input type="text" name="Father Name" id="fafname" maxlength="50" placeholder="Enter your Father Name" required>
+                </div>
+                <div>
+                    <label for="momname">Mother Name:</label>
+                    <input type="text" name="Mother Name" id="momname" maxlength="50" placeholder="Enter your Mother Name" required>
+                </div>
+                <div>
+                    <label for="email">Email ID:</label>
+                    <input type="email" name="EmailID" id="email" maxlength="50" placeholder="Enter your Email ID" required>
+                </div>
+                <div>
+                    <label for="dob">Date-of-Birth:</label>
+                    <input type="date" id="dob" name="Date-of-Birth" required>
+                </div>
+                <div>
+                    <label for="mon">Mobile Number:</label>
+                    <input type="text" id="mon" name="MobileNumber" maxlength="50" placeholder="xxxxxxxxxx" required>
+                </div>
+                <div>
+                    <label for="fmon">Father Mobile Number:</label>
+                    <input type="text" id="fmon" name="Father MobileNumber" maxlength="50" placeholder="xxxxxxxxxx" required>
+                </div>
+                <div>
+                    <label for="mmon">Mother Mobile Number:</label>
+                    <input type="text" id="mmon" name="Mother MobileNumber" maxlength="50" placeholder="xxxxxxxxxx" required>
+                </div>
+                <div>
+                    <label for="gn">Gender:</label>
+                    <input type="radio" name="Gender" id="gn" value="Male">Male
+                    <input type="radio" name="Gender" id="gn" value="Female">Female
+                    <input type="radio" name="Gender" id="gn" value="Other">Other
+                </div>
+                <div>
+                    <label for="Cname">College Name:</label>
+                    <input type="text" id="Cname" name="College Name" maxlength="50" placeholder="Enter College Name">
+                </div>
+        </div>
+        </form>
+        <div class="c">
+            <form>
+                <div>
+                    <label for="co">Course:</label>
+                    <select id="co">
+                        <option value="" disabled selected>Choose an option</option>
+                        <option>CSE</option>
+                        <option>AIML</option>
+                        <option>CYBER SECURITY</option>
+                        <option>DATA SCIENCE</option>
+                        <option>MECHANICAL</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>EIE</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="add">Address:</label>
+                    <textarea name="Address" id="add" rows="5" cols="40" placeholder="Enter your Address"></textarea>
+                </div>
+                <div>
+                    <label for="ci">City:</label>
+                    <input type="text" id="ci" name="City" maxlength="50" placeholder="Enter City">
+                    <label for="st">State:</label>
+                    <input type="text" id="st" name="State" maxlength="50" placeholder="Enter State">
+                </div>
+                <div>
+                    <label for="pin">Pincode:</label>
+                    <input type="text" id="pin" name="Pincode" maxlength="6" placeholder="Enter Pincode">
+                </div>
+                <table>
+                    <label>Student Grades:</label>
+                    <div>
+                        <thead>
+                            <tr>
+                                <th scope="col">Year</th>
+                                <th scope="col">SGPA</th>
+                                <th scope="col">CGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Ist Year(1st sem)</th>
+                                <td><input type="text" name="SGPA" id="11s" maxlength="4"></td>
+                                <td><input type="text" name="CGPA" id="11c" maxlength="4"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ist Year(2nd sem)</th>
+                                <td><input type="text" name="SGPA" id="12s" maxlength="4"></td>
+                                <td><input type="text" name="CGPA" id="12c" maxlength="4"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">IInd Year(1st sem)</th>
+                                <td><input type="text" name="SGPA" id="21s" maxlength="4"></td>
+                                <td><input type="text" name="CGPA" id="21c" maxlength="4"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">IInd Year(2nd sem)</th>
+                                <td><input type="text" name="SGPA" id="22s" maxlength="4"></td>
+                                <td><input type="text" name="CGPA" id="22c" maxlength="4"></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="e">
+            <input type="button" style="background-color: rgb(237 238 242); font-weight: 500; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; width: 7%;" onclick="saveFile()" value="Submit">
+        </div>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>

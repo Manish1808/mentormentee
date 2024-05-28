@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+form {
+    display: grid;
+    border: 4px solid #50623A;
+    font-size: 20px;
+    margin: 5px 5px;
+    padding: 25px 10px;
+    background-color: #F5E8DD;
+    width: 570px;
+    height: auto;
+}
+
+div {
+    padding: 10px 10px;
+}
+
+.b {
+    position: relative;
+    right: -7%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    float: left;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.c {
+    position: relative;
+    left: -7%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    float: right;
+}
+
+table {
+    font-size: 13px;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+}
+
+.d {
+    background: linear-gradient(135deg, #F1FADA, #CCD3CA);
+    height: 100%;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 11px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+.e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 29px;
+    top: 5px;
+    width: 100%;
+}
+
+.a img {
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
